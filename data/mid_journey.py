@@ -16,7 +16,7 @@ import os
 
 load_dotenv()
 client = commands.Bot(command_prefix="*", intents=discord.Intents.all())
-token = 'add key'
+token = 'add-key'
 
 class Locate(Enum):
     prompt_0 = 0
@@ -44,10 +44,10 @@ def is_valid(m):
 
 async def keyboard_ctl(index):
     jobs = 0
-    size = 25
+    size = 5
 
     root_location = 'prompts/'
-    prompt_text = ['prompt_0.txt', 'prompt_1.txt', 'prompt_2.txt', 'prompt_3.txt', 'prompt_4.txt']
+    prompt_text = ['prompt_0.txt', '    prompt_1.txt', 'prompt_2.txt', 'prompt_3.txt', 'prompt_4.txt']
     prompts = prompt_download(prompt_text, root_location)
     for i in tqdm(range(size), desc="bot creating images ...."):
         prompt = prompts[index]
