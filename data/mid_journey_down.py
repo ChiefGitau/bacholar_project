@@ -39,10 +39,10 @@ def split_image(image_file):
 
 if __name__ == "__main__":
     folder = "input/"
-    sub_folder = ['raw_prompt_2', 'raw_prompt_3', 'raw_prompt_4']
+    sub_folder = ['raw_prompt_0', 'raw_prompt_1']
 
-    output = 'data_images/'
-    folder_output = ['prompt_2', 'prompt_3', 'prompt_4']
+    output = 'output/'
+    folder_output = ['prompt_0', 'prompt_1']
 
     for x, location in enumerate(sub_folder):
         num = 0
